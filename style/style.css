@@ -1,0 +1,137 @@
+.html,body{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: lightblue;
+}
+.mainGrid{
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr 1fr;
+    grid-template-rows: 3fr 3fr 3fr 3fr;
+    grid-template-areas: 
+    "img1 img1 img2 img3"
+    "img1 img1 img4 img3"
+    "img5 img6 img6 img3"
+    "img7 img8 img9 img3";
+    height: 100vh;
+
+}
+.mainGridForm{
+    display: grid;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-areas: 
+    "headerGrid headerGrid headerGrid"
+    ". mainFlex ."
+    "footerGrid footerGrid footerGrid";
+    height: 100vh;
+}
+.boxGridStyle{
+    background-color: orange;
+    color: white;
+    margin: 20px;
+    padding: 10px;
+    
+}
+.img1Grid{
+    grid-area: img1;
+}
+.img2Grid{
+    grid-area: img2;
+}
+.img3Grid{
+    grid-area: img3;
+}
+.img4Grid{
+    grid-area: img4;
+}
+.img5Grid{
+    grid-area: img5;
+}
+.img6Grid{
+    grid-area: img6;
+}
+.img7Grid{
+    grid-area: img7;
+}
+.img8Grid{
+    grid-area: img8;
+}
+.img9Grid{
+    grid-area: img9;
+}
+.headerFlex{
+    grid-area: headerGrid;
+    display: flex;
+    align-items: center;
+    padding-left: 2%;
+}
+.headerStyle{
+    background-color: orange;
+}
+.mainFlex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-area: mainFlex;
+}
+.flexRows{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.flexColumns{
+    display: flex;
+    flex-direction: column;
+}
+.buttonFormFlex{
+    align-items: center;
+}
+.selectStyle{
+  width: 55%;
+}
+.mainStyle{
+    margin: 2% auto; 
+    padding: 3%;
+    border: 2px solid orange;
+    border-radius: 50px; 
+    box-shadow: inset 0 0 5px 2px orange;
+}
+.inputStyle{
+    border: 1px solid darkorange;
+    border-radius: 10px;
+    height: 30px;
+    background-color: lightorange;
+
+}
+.footerFlex{
+    grid-area: footerGrid;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 2%;
+}
+.footerFlex ul{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    list-style-type: none;
+    
+}
+.footerFlex li{
+    margin-right: 1%;
+
+    
+}
+.footerStyle{
+    background-color: orange;
+}
+#activeLink{
+    font-size: 1.5rem;
+}

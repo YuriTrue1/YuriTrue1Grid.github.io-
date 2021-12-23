@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>FormGrid</title>
+</head>
+<body>
+    <main class="mainGridForm">
+        <div class="headerFlex headerStyle">
+            <div>
+                <h1>Эта форма</h1>
+            </div>
+        </div>
+        <div class="mainFlex mainStyle">
+            
+                <div> 
+                    
+                    <form action="" id="mainForm">
+                        <div >
+                            <div>
+                                <h3>Как Вам удобно получить ответ</h3>
+                            </div>
+                            <div>
+                                <input type="radio" id="radoi1" name="radio" value="по почте"> по почте <br>
+                                <input type="radio" id="radoi2" name="radio" value="по телефону"> по телефону <br>
+                                <input type="radio" id="radoi3" name="radio" value="не нужно отвечать"> не нужно отвечать
+                            </div>
+                        </div>
+                        <div >
+                            <div>
+                                <p>Укажите тему вопроса</p>
+                            </div>
+                            <div>
+                                <select class="inputStyle selectStyle" name="select" id="select">
+                                    <option value="работа">работа</option>
+                                    <option value="дом">дом</option>
+                                    <option value="учеба">учеба</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div >
+                            <div>
+                                <p>И еще один вопрос?</p>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="check"  value="может так"> может так <br>
+                                <input type="checkbox" name="check"  value="или не так"> или не так <br>
+                                <input type="checkbox" name="check"  value="иначе"> иначе 
+                            </div>
+                        </div>
+                        <div >
+                            
+                                <div class="flexRows">
+                                    <div>
+                                        <p>
+                                            Ваш имя
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <input type="text" class="inputStyle" name="name" id="name">
+                                    </div>
+                                </div>
+                            
+                            
+                                <div class="flexRows">
+                                    <div>
+                                        <p>
+                                            Адрес почты
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <input type="email" class="inputStyle" name="email" >
+                                    </div>
+                                </div>
+                          
+                            
+                                <div class="flexRows">
+                                    <div>
+                                        <p>Номер телефона</p>
+                                    </div>
+                                    <div>
+                                        <input type="number" class="inputStyle" name="phone" >
+                                    </div>
+                                </div>
+                           
+                                <div class="flexColumns">
+                                    <div>
+                                        <p>Ваш вопрос </p>
+                                    </div>
+                                    <div>
+                                        <textarea name="question" id="question" cols="30" rows="2"></textarea>
+                                    </div>
+                                    <div class="buttonFormFlex flexColumns">
+                                        <button type="submit" class="inputStyle " >Отправить вопрос</button>
+                                    </div>
+                                </div>
+                        </div>
+    
+                    </form>
+                </div>
+            
+        </div>
+        <div class="footerFlex footerStyle">
+            <ul>
+                <li><a href="../index.html">Веб-технологии, задание 1</a></li>
+                <li id="activeLink"><a href="#">Веб-технологии, задание 2</a></li>
+            </ul>
+        </div>
+        
+    </main>
+    <script src="../js/js.js"></script>
+</body>
+</html>
